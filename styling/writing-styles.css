@@ -1,0 +1,97 @@
+.page-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.carousel {
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    width: 70vw;
+    height: 30vh;
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.carousel .left-arrow {
+    width: 10%;
+    height: 100%;
+    background-color: rgb(41, 37, 37);
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.carousel .quote-space {
+    width: 80%;
+    height: 100%;
+    background-color: rgb(85, 80, 80);
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.carousel .right-arrow {
+    width: 10%;
+    height: 100%;
+    background-color: rgb(41, 37, 37);
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.fiction-picture{
+    display: flex;
+    flex-direction: column;
+}
+#read-follow{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    color: black;
+    text-decoration: none;
+    
+}
+.page-container img{
+    width: 15vw;
+    height: 30vh;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    border-style: solid;
+    border-radius: 2px;
+    border-color: black;
+}
+.fiction-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+.synopsis{
+    width: 40vw;
+    
+}
+
+@media screen and (max-width: 800px) {
+    .fiction-container{
+        flex-direction: column;
+        width: 50%;
+        margin-bottom: 4rem;
+    }
+    
+    .fiction-picture{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #read-follow{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 40%;
+       
+    }
+    .page-container img{
+        width: 20vw;
+        height: 30vh;
+        margin-right: 3rem;
+        margin-left: 3rem;
+    }
+}

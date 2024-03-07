@@ -9,6 +9,8 @@
     <title>Eve Delgado</title>
     <meta name="description" content="Landing/home page for Eve Delgado's portfolio website. Does math, software engineering, and writing">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styling/styles.css"">
+    <link rel="stylesheet" href="styling/anims.css"">
   </head>
 
   <body>
@@ -25,128 +27,48 @@
     
       -->
 
-   
-    <header>
-      <a href="Landing.html">Eve</a>
-      <div class="navbar">
-        <ul class="nav-list">
-          <li class="nav-item"><a href="Landing.html">Home</a></li>
-          <li class="nav-item"><a href="Resume.html">Resume</a></li>
-          <li class="nav-item"><a href="Contact.html">Contact</a></li>
-        </ul>
-    </div>
-  </header>
-    <div class="landing-content">
-      <h1>Hi,<br/> I'm <span>Eve</span></h1>
-      <p>I love: <span class="typing-text"></span></p>
-    </div>
-    <div class="social-links">
-      <ul>
-        <li class="social-item" id="linkdin"><a href="https://www.linkedin.com/in/eve-delgado-00a67a173/">Linkdin</a></li>
-        <li class="social-item" id="github"><a href="https://github.com/Eve-Flower">Github</a></li>
-        <li class="social-item" id="royalroad"><a href="https://www.royalroad.com/profile/437323">Royalroad</a></li>
-      </ul>
-    </div>
-    <div>
-      <h2>Projects</h2>
+   <!-- header with navbar -->
+   <div id="page-container">
+    <header class="header">
+      <a href="Landing.html"><span id="logo">Eve</span></a>
+      <nav class="navbar">
+        
+          <a href="Landing.html" class="active">Home</a>
+          <a href="Resume.html">Resume</a>
+          <a href="Contact.html">Contact</a>
+          <a href="Writings.html">My Writings</a>
+        
+      </nav>
+    </header>
+    <div class="wrapper">
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      
 
     </div>
-    <h1>This page is poorly written</h1>
-    <p>
-      There are many things wrong with this page. It's not so bad that it won't
-      work on most browsers, but it has many things that could be written much
-      better. Your job is to use this code as a starting point and improve it.
-    </p>
-    <h2>
-      You could, of course, cheat!
-      <p>
-        There is nothing wrong with using an HTML cleaner such as HTMLTidy, nor
-        in using an accessibility checker like the W3 site to ensure your code
-        works well. In fact, we would highly recommend that you do this whenever
-        you create web pages because they help to ensure your code is compatible
-        with standards and accessible to as many people as possible. Similarly,
-        it makes perfect sense to use a WYSIWYG HTML editor such as Dremweaver
-        orthe open source KompoZer when actually writing web pages. For the
-        purposes of this exercise, however, you may learn more effectively if
-        you avoid doing that until you are fairly comfortable that you have made
-        as many changes as you can with just the aid of references. The main
-        reason we are learning HTML is so that we can write dynamic JavaScript
-        programs that are embedded within and which use and manipulate HTML, CSS
-        and other browser technologies. If you take short cuts at this point,
-        you will find it <i>much</i> harder later on. Remember, while marks will
-        be lost if you don't take care to deal with the problems on these pages,
-        the main things we are looking for relate to your ability to use the
-        technology well and effectively, paying close attention to the design
-        needs you have already identified
-      </p>
-    </h2>
-    <h3>
-      Adding links
-      <p>
-        <a href="https://scis.lms.athabascau.ca/file.php/310/html/sample2.html"
-        >This is a link to the other page in this badly written pair of
-          pages</a
-        >. It uses a relative URL to point to a file in the same file system.
-        This is necessary if you are building a site for portability, so that
-        you can move it from one place (say your local computer) to another
-        (say, your website).
-      </p>
-      <p>
-        <a href="http://www.athabascau.ca/">
-          And this is a link to Athabasca's main site</a
-        >
-        It uses an absolute URL that points to a unique web address. When the
-        site moves, it will still point to that same address.
-      </p>
-    </h3>
-    <h3>Using pictures</h3>
-    <p>
-      Pictures are not a part of a web page - the HTML page includes a link that
-      tells the browser to embed the image (if it can) and some extra optional
-      attributes such as its position relative to the text. It is far preferable
-      to use stylesheets for this kind of formatting, but that's a subject for
-      the next unit.
-      <img src="sample1_files/aulogo.gif" />
-    </p>
-    <h3>
-      Making lists
-      <ul>
-        <li>lists are useful</li>
-        <li>for many things</li>
-        <li>
-          and can be unordered,
-          <ul<li
-            >indented
-            <ol>
-              <li>numbered</li>
-              <li>like this</li>
-            </ol></ul<li
-          >
-        </li>
-      </ul>
-      <li>and more</li>
-    </h3>
-    <h3>
-      Making tables
-      <table border="1">
-        <tbody>
-          <tr>
-            <td>Tables should only be used for tabular data</td>
-            <td>and never for layout</td>
-          </tr>
-          <tr>
-            <td>but many people do</td>
-            <td>use them for layout</td>
-          </tr>
-          <tr>
-            <td colspan="2">
-              It's not good for accessibility. Stylesheets work much better for
-              this
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </h3>
-    <footer>Made with <i class=""></i> by <a href="https://www.linkedin.com/in/eve-delgado-00a67a173/">Eve Delgado</a> </footer>
+    <!-- landing content for page and animated text -->
+    <div class="landing-content">
+      <h1 id="intro-text">Hi,<br/> I'm <span class="glow pink">Eve</span></h1>
+      <p class="interest-text">I love: <span class="typing-text"></span></p>
+    </div>
+    <!-- socials list -->
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/eve-delgado-00a67a173/" id="linkdin" target="_blank">Linkdin</a>
+        <a href="https://github.com/Eve-Flower" id="github" target="_blank">Github</a>
+        <a href="https://www.royalroad.com/profile/437323" id="royalroad" target="_blank">Royalroad</a>
+    </div>
+    <!-- Project section begin (not sure if arrow before or after yet)-->
+    <div class="project-container">
+      <a><p>Projects</p></a>
+
+    </div>
+    <!-- Footer section-->
+    <footer><p>Made with love by <a href="https://www.linkedin.com/in/eve-delgado-00a67a173/">Eve Delgado</a></p></footer>
+  </div>
   </body>
 </html>

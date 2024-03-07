@@ -1,0 +1,144 @@
+* {
+    margin-bottom: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+
+}
+body {
+    background-color: var(--bg-color);
+}
+:root {
+    --bg-color: rgba(255, 255, 255, 0.582);
+    --second-bg-color: rgb(32, 32, 32);
+    --text-color: white;
+    --main-color: rgb(255, 157, 157);
+}
+#page-container{
+    height: 100%;
+
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    padding: 1rem 9%;
+    margin-bottom: 0rem;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    z-index: 2;
+    background-color: var(--second-bg-color);
+}
+
+.landing-content{
+    margin-top: 5rem;
+    display: flex;
+    justify-content:left;
+    align-items:flex-start;
+    flex-direction: column;
+    padding-top: 5rem;
+    padding-left: 10rem;
+    padding-right:10rem;
+    position: relative;
+    z-index: 2;
+}
+#intro-text{
+    font-size: 5rem;
+    padding-right: 10px;
+}
+.pink{
+    color: var(--main-color);
+}
+#logo {
+    font-size: 2rem;
+    color: azure;
+    position: relative;
+    bottom:0;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    margin-top: 1rem;
+    display: flex;
+    color: white;
+    background-color: var(--second-bg-color);
+}
+footer a{
+    color:inherit;
+    
+}
+nav a{
+    font-size: 1.5rem;
+    padding-left: 10px;
+    color: azure;
+}
+.active{
+    color: var(--main-color);
+    font-size: 1.7rem;
+}
+.active:hover, nav a:hover {
+    color: pink;
+}
+
+.contact-content {
+    margin-top: 10rem;
+}
+#logo:hover {
+    color: var(--main-color);
+}
+.interest-text{
+    font-size: 200%;
+}
+.social-links{
+    position: relative;
+    z-index: 2;
+    font-size: 2rem;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 40px;
+    width: 10%vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    
+}
+.social-links a{
+    padding-left: 10px;
+    color: var(--second-bg-color);
+}
+.social-links a:hover{
+    color: var(--main-color);
+}
+.project-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-size: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+}
+.project-container p {
+    box-shadow: 0 2px 5px 0 rgb(250, 137, 137),0 2px 10px 0 rgba(0,0,0,0.12);
+    border-radius: 2px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.815);
+    padding-left: 1rem;
+    opacity: 80%;
+    padding-right: 1rem;
+
+}
+.project-container p:hover {
+    color: var(--main-color);
+    border-color: rgb(24, 20, 20);
+}

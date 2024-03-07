@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contact page for Eve Delgado's portfolio website. Here, you can send emails directly to her using the form.">
-    <title>Contact</title>
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="styling/styles.css"">
+    <link rel="stylesheet" href="styling/anims.css"">
+    <link rel="stylesheet" href="styling/contact-styles.css"">
 </head>
 <body>
     <!-- 
@@ -14,20 +17,43 @@
         right side of page is a form (in its infancy), with a first name, email, and what they want to say. This will be sent to my email
         there will be a thank you for sending popup or page shift after the user sends the message so they know it went through.
     -->
-    <header>
-        <a href="Landing.html">Eve</a>
-        <div class="navbar">
-          <ul class="nav-list">
-            <li class="nav-item"><a href="Landing.html">Home</a></li>
-            <li class="nav-item"><a href="Resume.html">Resume</a></li>
-            <li class="nav-item"><a href="Contact.html">Contact</a></li>
-          </ul>
-      </div>
+    <header class="header">
+        <a href="Landing.html"><span id="logo">Eve</span></a>
+        <nav class="navbar">
+          
+            <a href="Landing.html">Home</a>
+            <a href="Resume.html">Resume</a>
+            <a href="Contact.html" class="active">Contact</a>
+            <a href="Writings.html">My Writings</a>
+          
+        </nav>
     </header>
-    <div class="contact-content">
-        <div class="contact-text"></div>
-        <div class="contact-form"></div>
+    <div class="contact-container ">
+        <div class="contact-content slight-background">
+            
+            <div class="contact-text">
+                <div>
+                    <h1>Need to talk?</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A debitis nostrum quia officiis, necessitatibus laborum inventore maiores quisquam dolores error possimus nemo magnam molestiae natus, dolorem cum quo in perspiciatis?</p>
+                </div>
+                <img src="images\kisspng-computer-icons-email-icon-design.jpg" alt="Picture of mail">
+                
+            </div>
+
+            <div class="contact-form">
+                <form action="mailto:evelyn.mdd@outlook.com" method="post" enctype="text/plain">
+                    <label for="fname">Name:</label>
+                    <br>
+                    
+                    <input type="text" name="name" placeholder="Your name...">
+
+                    <br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="subject" name="subject" placeholder="Type here..."></textarea><br>
+                    <input type="submit" value="Submit" id="submit-button">
+                </form>
+            </div>
+        </div>
     </div>
-    
 </body>
 </html>
