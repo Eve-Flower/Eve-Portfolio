@@ -94,11 +94,7 @@ function typing_text(){
   
   
 }
-//----theme section start----
-  //get styles from root:
-  
-  //define theme
-  
+
 
 
 

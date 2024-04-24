@@ -23,7 +23,7 @@
             <a href="Contact.html">Contact</a>
             <a href="Writings.html" class="active">My Writings</a>
             <form action="">
-                <label for="theme">Theme</label>
+                <label for="theme" class="theme-label">Theme</label>
                   <select name="theme-name" id="theme-menu" onchange="set()">
                     <option value="default">Default</option>
                     <option value="dark">Dark</option>
@@ -166,5 +166,18 @@
   
     </script>
     <script src="Scripts/Scripts.js"></script>
+    <script src="Scripts/jquery-3.7.1.min.js"></script>
+    <script src="Scripts/gsap.min.js"></script>
+    <script src="Scripts/paper-core.min.js"></script>
+    <script src="Scripts/simplex-noise.min.js"></script>
+    <script src="Scripts/jquery.serialcursor.js"></script>
+    <script>
+    $(document).ready(function(){
+        // jquery.serialcursor initialisation
+        $('#serialcursor').serialcursor();
+        $(".page-container").fadeOut(5);
+        $(".page-container").fadeIn(300);
+    });
+    </script>
 </body>
 </html>

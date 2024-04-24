@@ -75,7 +75,7 @@ body {
     position: relative;
     bottom:0;
 }
-footer {
+/* footer {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -86,8 +86,13 @@ footer {
     background-color: var(--second-bg-color);
 }
 footer a{
-    color:inherit;
+    color:inherit; 
+} */
     
+/*Theme text color*/
+
+.theme-label {
+    color: white;
 }
 nav a{
     font-size: 1.5rem;
@@ -151,18 +156,41 @@ nav a{
     background-color: var(--light_var);
     
 }
+/*kitten draggable and link to contact*/
+.kitty a{
+    
+    height: 15rem;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    flex-direction: row-reverse;
+    
+
+}
+#draggable-cat {
+    width: 15%;
+    height: 100%;
+    padding-right: 5%;
+    z-index: 2;
+    
+}
+
 
 
 /* Hide the link that should open and close the navbar on small screens */
 .navbar .icon {
     display: none;
   }
- /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the navbar (.icon) */
+ /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the navbar (.icon) 
+    also, make cat a little bigger!*/
  @media screen and (max-width: 600px) {
     .navbar a:not(:first-child) {display: none;}
     .navbar a.icon {
       float: right;
       display: block;
+    }
+    #draggable-cat{
+        width: 22%;
     }
   }
   
@@ -181,7 +209,7 @@ nav a{
     }
   } 
 
-.about-me{
+.about-me {
     width: 30rem;
     height: 15rem;
     background-color: var(--second-bg-color);
@@ -190,4 +218,21 @@ nav a{
     background-color: rgb(255, 163, 163);
     
   }
-  
+  /*Begin serial cursor css declarations*/
+
+/* JavaScript: serialcursor */
+#serialcursor{pointer-events:none;}
+#serialcursor-inner{position:fixed;z-index:13;width:80px;height:80px;margin:-40px 0 0 -40px;opacity:0.2;transition:opacity 900ms;}
+#serialcursor-pointer{position:fixed;z-index:13;height:8px;width:8px;transform:translate(-50%, -50%);background-color:#bc2d39;border-radius:100%;transition:200ms;}
+#serialcursor.on-mousemove #serialcursor-inner{opacity:.6;}
+#serialcursor.is-click #serialcursor-inner{opacity:1;}
+#serialcursor.is-click #serialcursor-pointer{transform:translate(-50%, -50%) scale(0.75);}
+#serialcursor-pointer-grab{opacity:0;transition:opacity 400ms;}
+#serialcursor-pointer-grab .sub-icon{position:absolute;top:-2px;width:6px;height:14px;fill:#bc2d39;transition:400ms;}
+#serialcursor-pointer-grab .sub-icon.is-left{left:-5px;}
+#serialcursor-pointer-grab .sub-icon.is-right{right:-5px;}
+#serialcursor.is-grab #serialcursor-pointer-grab{opacity:1;}
+#serialcursor.is-grab #serialcursor-pointer-grab .sub-icon{fill:#fff;}
+#serialcursor.is-grab #serialcursor-pointer-grab .sub-icon.is-left{left:-16px;}
+#serialcursor.is-grab #serialcursor-pointer-grab .sub-icon.is-right{right:-16px;}
+[data-serialcursor-state='grab']{cursor:grab;}
